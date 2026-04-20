@@ -19,9 +19,11 @@ class _LoginScreenState extends State<LoginScreen> {
   var passwordController = TextEditingController();
 
   var formKey = GlobalKey<FormState>();
+  bool isPassword = true;
 
   @override
   Widget build(BuildContext context) {
+
 
 
     return Scaffold(
@@ -29,19 +31,19 @@ class _LoginScreenState extends State<LoginScreen> {
 
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        title: Text(
-          'Todo App',
-          style: Theme.of(context).textTheme.titleLarge,
-        ),
-        centerTitle: true,
       ),
       body: Stack(
         children: [
-          Image.asset(
-            'assetes/images/background.png',
+          Container(
+            padding: EdgeInsets.all(60),
+            child: Image.asset(
+              'assets/images/app_iconw.png',
+              alignment: AlignmentGeometry.topCenter,
+
+            ),
+            color: MyTheme.primaryLight,
             width: double.infinity,
             height: double.infinity,
-            fit: BoxFit.cover,
           ),
           Form(
             key: formKey,
@@ -77,31 +79,46 @@ class _LoginScreenState extends State<LoginScreen> {
                       }
                       return null;
                     },
-                    isPassword: true,
+                    KeyboardType: TextInputType.visiblePassword,
+                    isPassword: isPassword,
+                    suffixIcon: InkWell(
+                      child: isPassword
+                          ? Icon(Icons.visibility_off,color: MyTheme.WhiteColor)
+                          : Icon(Icons.visibility,color: MyTheme.WhiteColor),
+                        onTap: () {
+                          setState(() {
+                            isPassword = !isPassword;
+                          });
+                        },
+
+                    ),
                   ),
+                  SizedBox(height:MediaQuery.of(context).size.height*0.09) ,
+
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(
-                        onPressed: (){
-                          Login();
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Theme.of(context).primaryColor,
-                        ) ,
+                          onPressed: (){
+                            Login();
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: MyTheme.WhiteColor,
+                          ) ,
 
-                        child: Text('Login',
-                          style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                            color: MyTheme.WhiteColor,
-                          ),)
-                    ),
+                          child: Text('Login',
+                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                              color: MyTheme.blackColor,
+                            ),)
+                      ),
                   ),
-                  SizedBox(height:MediaQuery.of(context).size.height*0.02) ,
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Don't have an account?",
-                        style: Theme.of(context).textTheme.titleMedium!,
+                        style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                          color: MyTheme.WhiteColor,
+                        ),
                       ),
                       TextButton(
                         onPressed: (){
@@ -109,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         child: Text('Sign Up',
                             style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                              color: Theme.of(context).primaryColor,)
+                              color:MyTheme.WhiteColor)
                         ),
 
                       ),
