@@ -1,10 +1,9 @@
-import 'package:e_commerce/Data/repository/auth_repository/repository/auth_repository_impl.dart';
 import 'package:e_commerce/ui/utils/dialog_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../domain/use_case/register_usecase.dart';
+import '../../../domain/di.dart';
 import '../../utils/cutome_text_forme_field.dart';
 import '../../utils/my_theme.dart';
 import '../login screen/login_screen.dart';
@@ -27,17 +26,25 @@ class _RegisterScreenState extends State<RegisterScreen> {
       bloc: viewModel,
       listener: (context, state) {
         if (state is RegisterLoadingState){
-          DialogUtils.ShowLoading(context,state.loadingMassage??"");
+          DialogUtils.ShowLoading(context,state.loadingMassage??"loading...");
+
         }
+
         if (state is RegisterErrorState) {
-             DialogUtils.hideDialog(context);
-             DialogUtils.showMassage(context, state.errorMassage??'',
+          DialogUtils.hideDialog(context);
+          DialogUtils.showMassage(context, state.errorMassage??'',
              posActionName:'ok' );
         }
         if (state is RegisterSuccessState) {
-          DialogUtils.showMassage(context, state.response?.userEntity.name??"",
-              posActionName:'ok' );        }
           DialogUtils.hideDialog(context);
+          DialogUtils.showMassage(context, state.response?.userEntity.name??"",
+              posActionName:'ok' ,
+          posAction: (){
+            Navigator.pushNamed(context, LoginScreen.routName);
+          }
+          );
+        }
+
 
       },
       child: Scaffold(

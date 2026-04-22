@@ -13,15 +13,14 @@ import '../../../../domain/repository/repository/auth_repository_contract.dart';
   @override
   Future<Either<Failures,AuthResultEntity>> register(String? name, String? email,
       String? password, String? rePassword, String? phone)  {
-    // TODO: implement register
     return  remoteDataSource.register(name, email,
         password, rePassword, phone);
+  }
 
-
+  @override
+  Future<Either<Failures, AuthResultEntity>> login(String? email, String? password) {
+    return remoteDataSource.login(email, password);
   }
 
 }
 
-AuthRepositoryContract injectAuthRepositoryContract(){
-   return AuthRepositoryImpl(remoteDataSource: injectAuthRemoteDataSource());
-}
