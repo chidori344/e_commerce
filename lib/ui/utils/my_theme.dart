@@ -1,4 +1,4 @@
-import 'dart:ui';
+ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class MyTheme {
@@ -37,7 +37,7 @@ class MyTheme {
           color: blackColor,
           fontSize: 18,
           fontWeight: FontWeight.bold,
-        )
+        ),
     ),
   );
 }

@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../home/home_screen.dart';
 import '../auth/register screen/register_screen.dart';
 
 class SplashScreen extends StatefulWidget {
