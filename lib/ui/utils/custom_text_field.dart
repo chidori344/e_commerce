@@ -23,20 +23,22 @@ class CustomTextField extends StatelessWidget {
               size: 32.sp,
               color: MyTheme.primaryLight,
             ),
-            onPressed: () {},
+            onPressed: () {
+           // search action
+            },
           ),
           border: buildBaseBorder(),
           enabledBorder: buildBaseBorder(),
           focusedBorder: buildBaseBorder().copyWith(
               borderSide:
-              const BorderSide(color: MyTheme.primaryLight, width: 2))),
+              BorderSide(color: MyTheme.primaryLight, width: 2))),
     );
   }
 
   OutlineInputBorder buildBaseBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(50.r),
-      borderSide: const BorderSide(color: MyTheme.primaryLight, width: 1),
+      borderSide:  BorderSide(color: MyTheme.primaryLight, width: 1),
     );
   }
 }

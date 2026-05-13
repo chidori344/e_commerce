@@ -1,12 +1,15 @@
+ import 'package:e_commerce/ui/home_screen/home_screen_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 import '../../../domain/di.dart';
 import '../../utils/cutome_text_forme_field.dart';
 import '../../utils/dialog_utils.dart';
 import '../../utils/my_theme.dart';
+import '../../utils/shared_preference_Utils.dart';
 import '../register screen/register_screen.dart';
 import 'cubit/login-screen_view_model.dart';
 import 'cubit/login_states.dart';
@@ -41,10 +44,11 @@ LoginScreenViewModel viewModel = LoginScreenViewModel(loginUseCase: injectLoginU
           if (state is LoginSuccessState) {
             DialogUtils.hideDialog(context);
             DialogUtils.showMassage(context, state.response?.userEntity.name??"",
-                posActionName:'ok',
+                posActionName:'ok',);
+            SahredPreferenceUtils.saveData(key: 'Token', value: state.response?.token??"");
 
-            );
           }
+          Navigator.of(context)!.pushReplacementNamed(HomeScreenView.routName);
 
 
         },

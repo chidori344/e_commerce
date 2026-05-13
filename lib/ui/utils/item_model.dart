@@ -18,17 +18,17 @@ class DummyItemModel {
 
   DummyItemModel(
       {required this.imgUrl,
-        required this.name,
-        required this.description,
-        required this.newPrice,
-        required this.oldPrice,
-        required this.avgRating,
-        required this.ratingCount,
-        required this.itemsSold,
-        required this.availableSizes,
-        required this.availableColors,
-        this.isWishlisted = false,
-        this.itemsInCart = 1});
+      required this.name,
+      required this.description,
+      required this.newPrice,
+      required this.oldPrice,
+      required this.avgRating,
+      required this.ratingCount,
+      required this.itemsSold,
+      required this.availableSizes,
+      required this.availableColors,
+      this.isWishlisted = true,
+      this.itemsInCart = 1});
 }
 
 final List<DummyItemModel> dummyItemData = [
@@ -40,7 +40,7 @@ final List<DummyItemModel> dummyItemData = [
     ],
     name: "Nike Air JordonNike shoes flexible",
     description:
-    "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+        "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
     newPrice: 1000,
     oldPrice: 1300,
     avgRating: 4.8,
@@ -63,7 +63,7 @@ final List<DummyItemModel> dummyItemData = [
       ],
       name: "Nike Air JordonNike shoes flexible",
       description:
-      "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+          "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
       newPrice: 1000,
       oldPrice: 1300,
       avgRating: 4.8,
@@ -86,7 +86,7 @@ final List<DummyItemModel> dummyItemData = [
     ],
     name: "Nike Air JordonNike shoes flexible",
     description:
-    "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+        "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
     newPrice: 1000,
     oldPrice: 1300,
     avgRating: 4.8,
@@ -109,7 +109,7 @@ final List<DummyItemModel> dummyItemData = [
       ],
       name: "Nike Air JordonNike shoes flexible",
       description:
-      "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+          "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
       newPrice: 1000,
       oldPrice: 1300,
       avgRating: 4.8,
@@ -132,7 +132,7 @@ final List<DummyItemModel> dummyItemData = [
     ],
     name: "Nike Air JordonNike shoes flexible",
     description:
-    "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+        "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
     newPrice: 1000,
     oldPrice: 1300,
     avgRating: 4.8,
@@ -155,7 +155,7 @@ final List<DummyItemModel> dummyItemData = [
       ],
       name: "Nike Air JordonNike shoes flexible",
       description:
-      "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+          "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
       newPrice: 1000,
       oldPrice: 1300,
       avgRating: 4.8,
@@ -178,7 +178,7 @@ final List<DummyItemModel> dummyItemData = [
     ],
     name: "Nike Air JordonNike shoes flexible",
     description:
-    "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+        "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
     newPrice: 1000,
     oldPrice: 1300,
     avgRating: 4.8,
@@ -201,7 +201,7 @@ final List<DummyItemModel> dummyItemData = [
       ],
       name: "Nike Air JordonNike shoes flexible",
       description:
-      "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+          "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
       newPrice: 1000,
       oldPrice: 1300,
       avgRating: 4.8,
@@ -224,7 +224,7 @@ final List<DummyItemModel> dummyItemData = [
     ],
     name: "Nike Air JordonNike shoes flexible",
     description:
-    "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+        "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
     newPrice: 1000,
     oldPrice: 1300,
     avgRating: 4.8,
@@ -247,7 +247,7 @@ final List<DummyItemModel> dummyItemData = [
       ],
       name: "Nike Air JordonNike shoes flexible",
       description:
-      "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+          "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
       newPrice: 1000,
       oldPrice: 1300,
       avgRating: 4.8,
@@ -270,7 +270,7 @@ final List<DummyItemModel> dummyItemData = [
     ],
     name: "Nike Air JordonNike shoes flexible",
     description:
-    "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+        "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
     newPrice: 1000,
     oldPrice: 1300,
     avgRating: 4.8,
@@ -293,7 +293,7 @@ final List<DummyItemModel> dummyItemData = [
       ],
       name: "Nike Air JordonNike shoes flexible",
       description:
-      "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+          "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
       newPrice: 1000,
       oldPrice: 1300,
       avgRating: 4.8,
@@ -316,7 +316,7 @@ final List<DummyItemModel> dummyItemData = [
     ],
     name: "Nike Air JordonNike shoes flexible",
     description:
-    "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+        "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
     newPrice: 1000,
     oldPrice: 1300,
     avgRating: 4.8,
@@ -339,7 +339,7 @@ final List<DummyItemModel> dummyItemData = [
       ],
       name: "Nike Air JordonNike shoes flexible",
       description:
-      "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
+          "Nike is a multinational corporation that designs, develops, and sells athletic footwear ,apparel, and accessories, more text here lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem.",
       newPrice: 1000,
       oldPrice: 1300,
       avgRating: 4.8,

@@ -1,8 +1,8 @@
-import 'dart:ui';
+ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class MyTheme {
-  static const Color primaryLight = Color(0xff004182);
+  static Color primaryLight = Color(0xff004182);
   static Color WhiteColor = Color(0xffffffff);
   static Color redColor = Color(0xffC91C22);
   static Color darkBlueColor = Color(0xff003E90);
@@ -37,7 +37,7 @@ class MyTheme {
           color: blackColor,
           fontSize: 18,
           fontWeight: FontWeight.bold,
-        )
+        ),
     ),
   );
 }
